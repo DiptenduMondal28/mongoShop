@@ -1,10 +1,11 @@
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 require('dotenv').config();
-let _db;
 
+let _db;
 const username = process.env.USERNAME_MONGO;
 const password = process.env.PASSWORD;
+console.log(username,password)
 
 const mongoConnect = callback => {
   MongoClient.connect(
